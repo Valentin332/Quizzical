@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background: hsla(339, 100%, 71%, 0.8);
+}
+
+
+.question--container {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    font-family: 'Gill Sans';
+    color: white;
+}
+
+.button-container {
+    display:flex;
+    justify-content: space-around;
+}
+
+.button-container > button {
+    border-radius: 20px;
+    border: 2px solid white;
+    text-align: center;
+    width: 100%;
+    margin-right: 20px;
+    font-weight: 700;
+   font-family: 'Gill Sans';
+   font-size: 1.2em;
+   color: white;
+    
+    
+}
+
+.button-container > button:hover {
+ cursor: pointer;
+ background-color: transparent;
+ border-color: cyan;
+}
+
+hr {
+    margin-top: 1.2em;
+    height: 1px;
+   background-color: white;
+   color: white;
+    
+}
+
+.submit{
+ margin: auto;
+ width: fit-content;
+ height: fit-content;
+ text-align: center;
+ 
+  
+    
+}
+.submit > button {
+    height: 50px;
+    width: 200px;
+    text-align:center;
+    font-weight: 800;
+    font-size: 1.5em;
+    border-radius: 20px;
+    font-family: 'Gill Sans';
+    cursor: pointer;
+    color: white;
+    background: #c33b80;
+    border: 2px solid white;
+}
+
+.submit > button:hover {
+    border-color: cyan;
+    }
+
+
+.hide {
+    display: none
+}
+
+.start--container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans';
+    margin-top: 30vh;
+}
+
+.start{
+    width: 60vh;
+    height: 30vh;
+    background-color: hsla(345, 100%, 62%, 1);
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    border: 1px  double   white
+    
+}
+
+.start > button {
+    margin: auto;
+    border-radius: 20px;
+    width: 5em;
+    height: 2.5em;
+    font-size: x-large;
+    font-family: 'Gill Sans';
+    cursor: pointer;
+    color: white;
+    background: #c33b80;
+    border: 2px solid white;
+}
+
+.start > button:hover{
+    border-color: cyan;
+    width: 5.1em;
+}
