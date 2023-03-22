@@ -18,12 +18,17 @@ export default function App(){
     ]);
   const [playAgain, setPlayAgain] = React.useState(false)
   const [gameStart, setGameStart] = React.useState(false)
+  const [isReady, setReady] = React.useState(false)
+ let showOrHide
+  if(gameStart && isReady){ showOrHide = "show" }
+  else { showOrHide = "hide" };
   
 
     React.useEffect( function(){
        fetch("https://opentdb.com/api.php?amount=10&category=27&type=multiple")
        .then(res => res.json())
-       .then(data => setQuizData(data.results.slice(0,5)))
+       .then(data => setQuizData(data.results.slice(0,5)));
+       setReady(true)
    }, [playAgain]);
 
 
@@ -44,7 +49,8 @@ export default function App(){
     {check: false, value: ""}
    ])
     setSubmitted(false) 
-   document.body.scrollTop = document.documentElement.scrollTop = 0  
+   document.body.scrollTop = document.documentElement.scrollTop = 0;
+   setReady(false)
     };
    
     function submit(){
@@ -107,7 +113,7 @@ const scoreStyles = {
     return (
      <main>
      { gameStart === false && <Start start={start} />}
-     <div className={gameStart ? "show" : "hide"}>
+     <div className={showOrHide}>
      {quizzes}  
      <div className="submit">
       { submitted && <h1 style={scoreStyles}>Your Score is {count}/{checked.length}</h1>}
