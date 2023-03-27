@@ -3,7 +3,7 @@
 }
 
 body{
-    background: hsla(339, 100%, 71%, 0.8);
+    background:  #053309;
 }
 
 .question--container {
@@ -66,7 +66,7 @@ hr {
     font-family: 'Gill Sans';
     cursor: pointer;
     color: white;
-    background: #c33b80;
+    background: #492C11;
     border: 2px solid white;
 }
 
@@ -90,7 +90,7 @@ hr {
 .start{
     width: 60vh;
     height: 30vh;
-    background-color: hsla(345, 100%, 62%, 1);
+    background-color: #1B5820 ;
     text-align: center;
     border-radius: 5px;
     color: white;
@@ -107,7 +107,7 @@ hr {
     font-family: 'Gill Sans';
     cursor: pointer;
     color: white;
-    background: #c33b80;
+    background: #492C11;
     border: 2px solid white;
 }
 

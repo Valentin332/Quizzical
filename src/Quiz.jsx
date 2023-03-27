@@ -21,7 +21,7 @@ export default function Quiz(props){
                  props.submitted ? {backgroundColor: props.correctAnswer === answer ? "green"      
                  : props.finalAnswer === answer ? "red" : "transparent"} 
                  :
-                 {backgroundColor: selectedAnswer === answer ? "#c33b80" : "transparent"}
+                 {backgroundColor: selectedAnswer === answer ? "#039555" : "transparent"}
                  
                  }
             >
